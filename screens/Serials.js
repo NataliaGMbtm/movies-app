@@ -3,7 +3,7 @@ import { Button, StyleSheet, Text, View } from "react-native";
 export default function Serials({navigation}) {
     return (
       <View>
-        <Text>Films</Text>
+        <Text>Seriale</Text>
       
       </View>
     );
@@ -11,7 +11,7 @@ export default function Serials({navigation}) {
   const styles = StyleSheet.create({
     container: {
       flex: 1,
-      backgroundColor: "#fff",
+      backgroundColor: "#E5C3A6",
       alignItems: "center",
       justifyContent: "center",
     },

@@ -1,9 +1,9 @@
-import { Button, StyleSheet, Text, View } from "react-native";
+import { StyleSheet, Text, View } from "react-native";
 
 export default function Top({navigation}) {
     return (
       <View>
-        <Text>Films</Text>
+        <Text>Topka wszystkiego</Text>
       
       </View>
     );
@@ -11,7 +11,7 @@ export default function Top({navigation}) {
   const styles = StyleSheet.create({
     container: {
       flex: 1,
-      backgroundColor: "#fff",
+      backgroundColor: "#7C81AD",
       alignItems: "center",
       justifyContent: "center",
     },
