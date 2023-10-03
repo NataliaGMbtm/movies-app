@@ -1,13 +1,15 @@
 import { Button, StyleSheet, Text, View } from "react-native";
 
-const CardPersons = ({ person }) => {
-  const title = person.known_for.map((item) =>
+const People = ({ person }) => {
+  console.log(person);
+  const title = person.known_for?.map((item) =>
     item.title ? item.title : item.name
   );
+
   return (
     <View style={styles.container}>
       <Text>Imię Nazwisko</Text>
-      <Image style={styles.people}></Image>
+      {/* <Image style={styles.people}></Image> */}
     </View>
   );
 };

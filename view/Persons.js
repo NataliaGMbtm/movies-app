@@ -7,6 +7,7 @@ const Person = () => {
   const { data, loading } = useMyHook(
     "https://api.themoviedb.org/3/person/popular"
   );
+  console.log("A");
 
   return (
     <View>
