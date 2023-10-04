@@ -43,6 +43,36 @@ class ApiUtil {
       return response.data;
     } catch (error) {}
   }
+  static async getpopularMovie() {
+    try {
+      const response = await axios.get(`${this.baseUrl}movie/popular`, {
+        params: {
+          api_key: this.apiKey,
+        },
+      });
+      return response.data;
+    } catch (error) {}
+  }
+  static async getTopMovie() {
+    try {
+      const response = await axios.get(`${this.baseUrl}movie/top_rated`, {
+        params: {
+          api_key: this.apiKey,
+        },
+      });
+      return response.data;
+    } catch (error) {}
+  }
+  static async getOnAirMovie() {
+    try {
+      const response = await axios.get(`${this.baseUrl}tv/on_the_air`, {
+        params: {
+          api_key: this.apiKey,
+        },
+      });
+      return response.data;
+    } catch (error) {}
+  }
 }
 
 export default ApiUtil;
